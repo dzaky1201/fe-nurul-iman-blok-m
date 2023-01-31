@@ -8,6 +8,12 @@ const StyledToolbar = styled(Toolbar)({
   justifyContent: "center"
 });
 
+const TextCustom = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    fontSize:"20px"
+  },
+}));
+
 const poopinsFont = createTheme({
   typography: {
     fontFamily: ["Poopins", "sans-serif"].join(","),
@@ -21,10 +27,14 @@ const NavBar = () =>{
       <ThemeProvider theme={poopinsFont}>
         <AppBar position="sticky">
           <StyledToolbar>
-            <img src={nurulLogo} style={{padding:8,height:58}} alt="nurul-iman"/>
-            <Typography fontSize={25} marginLeft={2}>
+            <img
+              src={nurulLogo}
+              style={{ padding: 8, height: 58 }}
+              alt="nurul-iman"
+            />
+            <TextCustom fontSize={25} marginLeft={2}>
               Masjid Nurul Iman blok M
-            </Typography>
+            </TextCustom>
           </StyledToolbar>
         </AppBar>
       </ThemeProvider>

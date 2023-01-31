@@ -1,23 +1,17 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import statusOn from ".././img/green-status.png";
-import statusOff from ".././img/red-status.png";
 import {
   Box,
   Card,
   CardContent,
   CircularProgress,
   CssBaseline,
-  Divider,
   List,
   ListItem,
-  ListItemAvatar,
-  ListItemText,
   Typography,
 } from "@mui/material";
 import axios from "axios";
 import { Circle } from "@mui/icons-material";
-import { green } from "@mui/material/colors";
 
 const ResponsiveBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

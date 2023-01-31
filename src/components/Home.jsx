@@ -1,6 +1,5 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import Avatar from "@mui/material/Avatar";
 import imagesExample from ".././img/sedekah-ramadhan.png";
 import { Box, CircularProgress, CssBaseline, Divider, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import axios from "axios";
