@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import imagesExample from ".././img/sedekah-ramadhan.png";
 import { Box, CircularProgress, CssBaseline, Divider, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const ResponsiveBox = styled(Box)(({theme})=>({
     [theme.breakpoints.up('md')]:{
@@ -40,17 +41,19 @@ export default function HomePage() {
             alt="nurul-iman"
           />
 
-          {announcement.data.map(({ banner, description, title }, index) => (
+          {announcement.data.map(({ banner, description, title, id }, index) => (
             <List>
-              <ListItem button key={index + title}>
-                <img
-                  src={banner}
-                  style={{marginRight:8,width: "78px", borderRadius: 8 }}
-                  alt="nurul-iman"
-                />
-                <ListItemText primary={title} secondary={description} />
-              </ListItem>
-              <Divider variant="middle" />
+              {/* <Link to={`annoncement/${id}`}> */}
+                <ListItem button key={index + title}>
+                  <img
+                    src={banner}
+                    style={{ marginRight: 8, width: "78px", borderRadius: 8 }}
+                    alt="nurul-iman"
+                  />
+                  <ListItemText primary={title} secondary={description} />
+                </ListItem>
+                <Divider variant="middle" />
+              {/* </Link> */}
             </List>
           ))}
         </ResponsiveBox>

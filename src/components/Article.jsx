@@ -1,3 +1,3 @@
 export default function ArticlePage() {
-  return <h1>this is article page</h1>;
+  return <h1>Coming soon</h1>;
 }

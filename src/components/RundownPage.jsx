@@ -23,7 +23,7 @@ const ResponsiveBox = styled(Box)(({ theme }) => ({
 
 const baseURL = "https://nurul-iman-blok-m.herokuapp.com/api/v1/rundown";
 
-export default function HomePage() {
+export default function RundownPage() {
   const [rundown, setRundown] = React.useState("");
 
   React.useEffect(() => {

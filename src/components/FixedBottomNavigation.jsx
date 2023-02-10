@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 import { Article, CalendarMonth, Home } from "@mui/icons-material";
 import { createTheme, ThemeProvider } from "@mui/material";
 import HomePage from "./Home";
-import RundownPage from "./Rundown";
+import RundownPage from "./RundownPage";
 import ArticlePage from "./Article";
 
 const outerTheme = createTheme({
